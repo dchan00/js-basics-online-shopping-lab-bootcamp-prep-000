@@ -28,13 +28,11 @@ function viewCart() {
     console.log('Your shopping cart is empty.')
   }
   else {
-    var keys = Object.keys(cart)
-
-    for(var i=0; i<keys.length; i++)
+    for(var i=0; i<cart.length; i++)
     {
-      if(keys.length===1)
+      if(cart.length===1)
       {
-        tmp += keys[i] + ' at $' + cart[keys[i]] + '.'
+        tmp += Object.keys(cart)[i] + ' at $' + cart[Object.keys(cart)[i]] + '.'
       }
 
     }
