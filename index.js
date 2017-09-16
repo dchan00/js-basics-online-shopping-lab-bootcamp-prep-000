@@ -31,7 +31,6 @@ function viewCart() {
     tmp = tmp + Object.keys(cart)[0] + ' at $' + cart[Object.keys(cart)[0]] + '.'
     console.log(tmp)
   }
-  console.log(tmp)
 }
 
 function total() {
