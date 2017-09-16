@@ -43,7 +43,7 @@ function viewCart() {
         }
         console.log(tmp)
       }
-      else if(cart.length===3){
+      else{
         if(i===cart.length-1){
           tmp += 'and '
         }
