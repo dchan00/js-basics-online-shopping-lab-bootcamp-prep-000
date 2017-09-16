@@ -28,7 +28,7 @@ function viewCart() {
     console.log('Your shopping cart is empty.')
   }
   else if(cart.length===1){}
-    tmp = tmp + Object.keys(cart)[0] + ' at $' + cart[Object.keys(cart)[0]] + '.'
+    tmp = tmp + Object.keys(cart)[0] + ' at $' + cart[Object.values(cart)[0]] + '.'
     console.log(tmp)
   }
 }
