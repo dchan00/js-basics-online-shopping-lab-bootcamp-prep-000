@@ -44,6 +44,9 @@ function viewCart() {
         console.log(tmp)
       }
       else if(cart.length===3){
+        if(i===cart.length-1){
+          tmp = ' and ' + tmp
+        }
         tmp += Object.keys(cart[i]) + ' at $' + cart[i][Object.keys(cart[i])]
 
         if(i===cart.length-1){
