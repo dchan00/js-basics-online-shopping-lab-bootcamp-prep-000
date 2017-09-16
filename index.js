@@ -33,7 +33,6 @@ function viewCart() {
         console.log(tmp)
       }
       else if(cart.length===2){
-
         tmp += Object.keys(cart[i]) + ' at $' + cart[i][Object.keys(cart[i])]
 
         if(i===cart.length-1){
@@ -41,6 +40,17 @@ function viewCart() {
         }
         else{
           tmp += ' and '
+        }
+        console.log(tmp)
+      }
+      else if(cart.length===3){
+        tmp += Object.keys(cart[i]) + ' at $' + cart[i][Object.keys(cart[i])]
+
+        if(i===cart.length-1){
+          tmp += '.'
+        }
+        else{
+          tmp += ', '
         }
         console.log(tmp)
       }
