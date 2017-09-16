@@ -88,11 +88,11 @@ function placeOrder(cardNumber) {
   // write your code here
   if(cardNumber===undefined) {
     console.log('Sorry, we don\'t have a credit card on file for you.')
-    return 'Sorry, we don\'t have a credit card on file for you.'
   }
-
-    //var totals = total()
-    //cart.length=0
+  else {
+    var totals = total()
+    cart.length=0
+    console.log(`Your total cost is $${total}, which will be charged to the card ${cardNumber}`)
     //return `Your total cost is $${total}, which will be charged to the card ${cardNumber}`
-
+  }
 }
