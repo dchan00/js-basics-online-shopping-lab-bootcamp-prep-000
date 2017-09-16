@@ -28,14 +28,10 @@ function viewCart() {
     console.log('Your shopping cart is empty.')
   }
   else {
-    for(var i=0; i<cart.length; i++)
-    {
       if(cart.length===1)
       {
-        tmp += Object.keys(cart)[i] + ' at $' + cart[Object.keys(cart)[i]] + '.'
+        tmp += Object.keys(cart)[0] + ' at $' + cart[Object.keys(cart)[0]] + '.'
       }
-
-    }
     console.log(tmp)
   }
 }
