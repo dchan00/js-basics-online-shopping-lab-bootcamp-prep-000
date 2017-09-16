@@ -86,8 +86,12 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
-    var totals = total()
-    cart.length=0
-    return `Your total cost is $${total}, which will be charged to the card ${cardNumber}`
+  if(cardNumber===undefined) {
+    return 'Sorry, we don\'t have a credit card on file for you.'
+  }
+    
+    //var totals = total()
+    //cart.length=0
+    //return `Your total cost is $${total}, which will be charged to the card ${cardNumber}`
 
 }
