@@ -28,14 +28,14 @@ function viewCart() {
   }
   else {
     for(var i=0; i<cart.length; i++) {
-      
+
       if(cart.length===1){
         tmp += Object.keys(cart[i]) + ' at $' + cart[i][Object.keys(cart[i])] + '.'
         console.log(tmp)
       }
     }
   }
-  
+
 }
 
 function total() {
