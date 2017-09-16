@@ -40,7 +40,7 @@ function viewCart() {
           tmp += '.'
         }
         else{
-          tmp += ','
+          tmp += ' and '
         }
         console.log(tmp)
       }
