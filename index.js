@@ -45,7 +45,7 @@ function viewCart() {
       }
       else if(cart.length===3){
         if(i===cart.length-1){
-          tmp = 'and ' + tmp
+          tmp = 'and '
         }
         tmp += Object.keys(cart[i]) + ' at $' + cart[i][Object.keys(cart[i])]
 
