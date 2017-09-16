@@ -92,7 +92,7 @@ function placeOrder(cardNumber) {
   else {
     var totals = total()
     cart.length=0
-    console.log(`Your total cost is $${total}, which will be charged to the card ${cardNumber}.`)
+    console.log(`Your total cost is $${totals}, which will be charged to the card ${cardNumber}.`)
     //return `Your total cost is $${total}, which will be charged to the card ${cardNumber}`
   }
 }
